@@ -1,4 +1,4 @@
-{% macro render(post, is_index, post_extra_class) %}
+{% macro render(post, is_index, is_pv, post_extra_class) %}
 
   {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
   {% set navlessPost = headlessPost %}
@@ -85,7 +85,7 @@
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="{{ post.path }}" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="{{ post.title }}" itemprop="commentsCount"></span>
                 </a>
               </span>
             {% elseif theme.disqus_shortname %}
@@ -97,6 +97,13 @@
               </span>
             {% endif %}
           {% endif %}
+
+          <!--不蒜子计算器 每页计算-->
+          {% if is_pv %}
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
+          {% endif %}
+          <!--不蒜子计算器 每页计算-->
 
           {% if not is_index and theme.facebook_sdk.enable and theme.facebook_sdk.like_button %}
             &nbsp; | &nbsp;
@@ -115,12 +122,6 @@
               </span>
           {% endif %}
 
-          {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
-              &nbsp; | &nbsp;
-              <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
-              </span>
-          {% endif %}
         </div>
       </header>
     {% endif %}
@@ -185,13 +186,7 @@
     </div>
 
     <div>
-      {% if not is_index %}
-        {% include 'wechat-subscriber.swig' %}
-      {% endif %}
-    </div>
-
-    <div>
-      {% if not is_index %}
+      {% if ! is_index %}
         {% include 'reward.swig' %}
       {% endif %}
     </div>
@@ -204,6 +199,63 @@
           {% endfor %}
         </div>
       {% endif %}
+
+      <! -- 添加捐赠图标 -->
+          {% if config.donate.enable %}
+          {% if is_home() %}
+          {% else %}
+          {% set divStyle = "display:inline-block" %}
+          {% if config.donate.block %}
+          {% set divStyle = "" %}
+          {% endif %}
+
+          <div class ="post-donate">
+            <div id="donate_board" class="donate_bar center">
+              <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+              <span class="donate_txt">
+                 &uarr;<br>
+                 {% if config.donate.text %}
+                  {{ config.donate.text }}
+                 {% endif %}
+              </span>
+              <br>
+            </div>
+
+            <div id="donate_guide" class="donate_bar center hidden">
+              {% if config.donate.alipay %}
+              <div style="{{divStyle}}">
+                <a href="{{ config.donate.alipay }}" title="{{config.donate.alipay_name}}" class="fancybox" rel="article0">
+                <img src="{{ config.donate.alipay }}"  height="164px" width="164px">
+                <br>
+                <span>{{config.donate.alipay_name}}</span>
+                </a>
+              </div>
+              {% endif %}
+
+            {% if config.donate.wechat %}
+            <div style="{{divStyle}}">
+             <a href="{{ config.donate.wechat }}" title="{{config.donate.wechat_name}}" class="fancybox" rel="article0">
+               <img src="{{ config.donate.wechat }}"  height="164px" width="164px">
+               <br>
+               <span>{{config.donate.wechat_name}}</span>
+             </a>
+             </div>
+
+            {% endif %}
+
+            </div>
+
+            <script type="text/javascript">
+              document.getElementById('btn_donate').onclick = function(){
+                $('#donate_board').addClass('hidden');
+                $('#donate_guide').removeClass('hidden');
+              }
+            </script>
+          </div>
+
+          {% endif%}
+      {% endif %}
+      <! -- end 添加捐赠图标 -->
 
       {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">

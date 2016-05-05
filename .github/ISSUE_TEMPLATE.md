@@ -8,22 +8,18 @@
 ### Steps to reproduce the behavior (重现步骤)
 
 
-### NexT Informations
-
-Add the  ✔  sign before an item which is affected by this behavior.
+### NexT Version, NexT Scheme
 
 NexT Version:
-
-  -  Master
-  -  Latest Release
-  -  Old version - 
+  - [ ] Master
+  - [ ] Latest Release
+  - [ ] Old version -
 
 NexT Scheme:
-  -  All schemes
-  -  Muse
-  -  Mist
-  -  Pisces
+  - [ ] Muse
+  - [ ] Mist
+  - [ ] Pisces
 
-### Other Informations (Like Browser, System, Screenshots)
+### Other Information (Like Browser, System, Screenshots)
 
 

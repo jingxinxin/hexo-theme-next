@@ -11,7 +11,12 @@
 {% block content %}
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+  <!--
+  #render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数
+  -->
+    {{ post_template.render(page,false,true) }}
 
     <div class="post-spread">
       {% if theme.jiathis %}

@@ -1,10 +1,9 @@
 .sidebar {
+  width: 0;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
-
-  width: 0;
   z-index: $zindex-4;
   box-shadow: inset 0 2px 6px black;
   background: $black-deep;
@@ -16,11 +15,12 @@
     &:hover { color: $gainsboro; }
   }
 
+  //TODO 修改滑块在平板和手机上是否显示 第二部分
   +tablet() {
-    display: none !important;
+    //display: none !important;
   }
   +mobile() {
-    display: none !important;
+    //display: none !important;
   }
 }
 
