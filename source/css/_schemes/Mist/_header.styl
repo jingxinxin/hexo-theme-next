@@ -2,10 +2,12 @@
 // --------------------------------------------------
 .header { background: $whitesmoke; }
 .header-inner {
-  padding: 25px 0 20px;
+  //padding: 25px 0 20px;
+  padding: 38px 0 38px;
   clearfix();
 
   +mobile() {
+    text-align:center; //手机下 博客名字居中
     width: auto;
     margin-bottom: 50px;
     padding: 10px;
@@ -14,11 +16,13 @@
 
 .site-meta {
   float: left;
-  margin-left: -20px;
+  margin-left: 32px;  //原值-20px 优化位置
   line-height: normal;
 
-  +mobile() {
-    margin-left: 10px;
+  +mobile() {  //修改手机下博客名字居中效果
+    float:none;
+    display:inline-block;
+    margin-left: 38px;
   }
 
   .brand {
