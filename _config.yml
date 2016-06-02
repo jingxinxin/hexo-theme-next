@@ -90,7 +90,7 @@ social_icons:
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 # default : /images/default_avatar.jpg
-avatar: /jacks/images/avatar.png
+avatar: /jacks/images/avatar.jpg
 
 # TOC in the Sidebar
 toc:
