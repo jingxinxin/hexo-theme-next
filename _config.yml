@@ -32,7 +32,7 @@ menu:
   archives: archives
   tags: tags
   #commonweal: /404.html
-  #test: test/index.html
+  test: test/index.html
   new: new
 
 # Enable/Disable menu icons.
@@ -232,7 +232,7 @@ leancloud_visitors:
 # tencent_analytics:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 
 
