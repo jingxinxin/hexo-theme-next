@@ -32,7 +32,7 @@ menu:
   archives: archives
   tags: tags
   #commonweal: /404.html
-  test: test/index.html
+  test: test/宝宝回家公益/index.html
   new: new
 
 # Enable/Disable menu icons.
@@ -164,7 +164,7 @@ use_font_lato: true
 
 
 # Swiftype Search API Key
-#swiftype_key:
+#swiftype_key: 7iBnHApBLzLpVuwxogMU
 
 # Baidu Analytics ID
 #baidu_analytics:
