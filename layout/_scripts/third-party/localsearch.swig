@@ -23,8 +23,7 @@
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-          debugger;
-          // get the contents from search data
+            // get the contents from search data
             isfetched = true;
             $('.popup').detach().appendTo('.header-inner');
             var datas = $( "entry", xmlResponse ).map(function() {
@@ -109,7 +108,7 @@
     });}
 
     // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
+    $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');

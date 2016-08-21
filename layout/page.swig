@@ -39,7 +39,7 @@
       {% if theme.study.enable %}
         {% include 'extensions/study/study.swig' %}
       {% else %}
-        <div style="text-align: center;color: #dddddd">淇℃伅锛氬彲鑳戒綘闇�瑕佸湪閰嶇疆鏂囦欢涓缃畇tudy: enable:true</div>
+        <div style="text-align: center;color: #dddddd">信息：可能你需要在配置文件中设置study: enable:true</div>
       {% endif %}
     {% else %}
       {{ page.content }}
