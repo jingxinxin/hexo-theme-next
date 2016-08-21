@@ -45,4 +45,5 @@
 <span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
 &nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
 <br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
+{#{% include '../_scripts/third-party/analytics/busuanzi-counter.swig' %}#}
 {% block footer %}{% endblock %}

@@ -33,6 +33,7 @@ menu:
   tags: tags
   #commonweal: /404.html
   #test: test/index.html
+  study: study
   new: new
 
 # Enable/Disable menu icons.
@@ -50,10 +51,37 @@ menu_icons:
   archives: archive
   commonweal: heartbeat
   test: flash
+  study: graduation-cap
   new: ellipsis-v
 
+# ---------------------------------------------------------------
+# extensions feature Settings
+# ---------------------------------------------------------------
 
-
+# study 读书页面
+study:
+ enable: true
+ readed:
+  我的第一本漫画炒股书:
+    url: https://img3.doubanio.com/lpic/s26717372.jpg
+    a:
+  ASP.NET 4.0 动态网站开发实用教程:
+    url: https://img3.doubanio.com/lpic/s9078940.jpg
+  HTML5+CSS3精致范例辞典:
+    url: https://img1.doubanio.com/lpic/s24559317.jpg
+  番茄工作法图解:
+    url: https://img3.doubanio.com/lpic/s4599081.jpg
+ reading:
+  nodejs深入浅出:
+       url: https://img3.doubanio.com/lpic/s27269296.jpg
+       a: ~
+  JavaScript:
+    url: https://img3.doubanio.com/lpic/s8958650.jpg
+  从你的全世界路过:
+    url: https://img3.doubanio.com/lpic/s27102925.jpg
+ want:
+  四步创业法:
+    url: https://img3.doubanio.com/lpic/s11171520.jpg
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -170,7 +198,7 @@ use_font_lato: true
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: Jacks
 duoshuo_hotartical: true
 # Disqus
 #disqus_shortname:
@@ -232,7 +260,7 @@ leancloud_visitors:
 # tencent_analytics:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 
 
@@ -252,11 +280,32 @@ vendors: vendors
 css: css
 js: js
 images: images
-
+extensions: extensions
 # Theme version
-version: 0.5.0
+version: 0.5.1
 # title
 links_title: 友情链接
 links:
   博主: http://51201314.me/
   暂缺: http://
+
+
+
+#reward
+#author: Jacks
+#alipay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg
+#wechatpay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg
+#reward_comment: 测试打赏
+
+#busuanzi-counter
+#busuanzi_count:
+#  enable: true
+#  site_uv: true
+#  site_uv_header: header
+#  site_uv_footer: footer
+#  site_pv: true
+#  site_pv_header: bheader
+#  site_pv_footer: cfooter
+
+
+
