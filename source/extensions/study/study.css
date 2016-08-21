@@ -209,7 +209,7 @@
   z-index: 20;
 }
 .tab-content .card {
-  background-size: contain!important;
+  background-size: cover!important;
 }
 
 /*endregion*/
