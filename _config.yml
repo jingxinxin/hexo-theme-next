@@ -58,29 +58,29 @@ menu_icons:
 # extensions feature Settings
 # ---------------------------------------------------------------
 
-# study è¯»ä¹¦é¡µé¢
+# study ¶ÁÊéÒ³Ãæ
 study:
  enable: true
  readed:
-  æˆ‘çš„ç¬¬ä¸€æœ¬æ¼«ç”»ç‚’è‚¡ä¹¦:
+  ÎÒµÄµÚÒ»±¾Âş»­³´¹ÉÊé:
     url: https://img3.doubanio.com/lpic/s26717372.jpg
     a:
-  ASP.NET 4.0 åŠ¨æ€ç½‘ç«™å¼€å‘å®ç”¨æ•™ç¨‹:
+  ASP.NET 4.0 ¶¯Ì¬ÍøÕ¾¿ª·¢ÊµÓÃ½Ì³Ì:
     url: https://img3.doubanio.com/lpic/s9078940.jpg
-  HTML5+CSS3ç²¾è‡´èŒƒä¾‹è¾å…¸:
+  HTML5+CSS3¾«ÖÂ·¶Àı´Çµä:
     url: https://img1.doubanio.com/lpic/s24559317.jpg
-  ç•ªèŒ„å·¥ä½œæ³•å›¾è§£:
+  ·¬ÇÑ¹¤×÷·¨Í¼½â:
     url: https://img3.doubanio.com/lpic/s4599081.jpg
  reading:
-  nodejsæ·±å…¥æµ…å‡º:
+  nodejsÉîÈëÇ³³ö:
        url: https://img3.doubanio.com/lpic/s27269296.jpg
        a: ~
   JavaScript:
     url: https://img3.doubanio.com/lpic/s8958650.jpg
-  ä»ä½ çš„å…¨ä¸–ç•Œè·¯è¿‡:
+  ´ÓÄãµÄÈ«ÊÀ½çÂ·¹ı:
     url: https://img3.doubanio.com/lpic/s27102925.jpg
  want:
-  å››æ­¥åˆ›ä¸šæ³•:
+  ËÄ²½´´Òµ·¨:
     url: https://img3.doubanio.com/lpic/s11171520.jpg
 
 # ---------------------------------------------------------------
@@ -235,7 +235,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: true
   user_id: 6265421695675270000
-  admin_nickname: åœ°ä¸»â•®(â•¯â–½â•°)â•­
+  admin_nickname: µØÖ÷¨r(¨s¨Œ¨t)¨q
 
 
 # Facebook SDK Support.
@@ -247,6 +247,14 @@ facebook_sdk:
   like_button:  #true
   webmaster:    #true
 
+# Facebook comments plugin
+# This plugin depends on Facebook SDK.
+# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
+facebook_comments_plugin:
+  enable: false
+  num_of_posts: 10  # min posts num is 1
+  width: 100%       # default width is 550px
+  scheme: light     # default scheme is light (light or dark)
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -284,10 +292,10 @@ extensions: extensions
 # Theme version
 version: 0.5.1
 # title
-links_title: å‹æƒ…é“¾æ¥
+links_title: ÓÑÇéÁ´½Ó
 links:
-  åšä¸»: http://51201314.me/
-  æš‚ç¼º: http://
+  ²©Ö÷: http://51201314.me/
+  ÔİÈ±: http://
 
 # add Fork me on Github
 fork_github:
@@ -298,7 +306,7 @@ fork_github:
 #author: Jacks
 #alipay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg
 #wechatpay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg
-#reward_comment: æµ‹è¯•æ‰“èµ
+#reward_comment: ²âÊÔ´òÉÍ
 
 #busuanzi-counter
 #busuanzi_count:
