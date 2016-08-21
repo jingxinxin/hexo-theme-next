@@ -39,7 +39,7 @@
       {% if theme.study.enable %}
         {% include 'extensions/study/study.swig' %}
       {% else %}
-        <div style="text-align: center;color: #dddddd">ĞÅÏ¢£º¿ÉÄÜÄãĞèÒªÔÚÅäÖÃÎÄ¼şÖĞÉèÖÃstudy: enable:true</div>
+        <div style="text-align: center;color: #dddddd">ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½study: enable:true</div>
       {% endif %}
     {% else %}
       {{ page.content }}
