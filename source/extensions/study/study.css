@@ -117,7 +117,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 10;
 }
 
 .slider {

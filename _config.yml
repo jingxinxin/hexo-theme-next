@@ -289,7 +289,10 @@ links:
   博主: http://51201314.me/
   暂缺: http://
 
-
+# add Fork me on Github
+fork_github:
+  enable: true
+  url: https://github.com/jingxinxin
 
 #reward
 #author: Jacks
