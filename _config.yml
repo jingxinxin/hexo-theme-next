@@ -104,7 +104,9 @@ study:
 scheme: Mist
 #scheme: Pisces
 
-
+mobile:
+  nav:
+    float: right
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -211,7 +213,10 @@ use_font_lato: true
 
 # Duoshuo ShortName
 duoshuo_shortname: Jacks
-duoshuo_hotartical: true
+duoshuo:
+ shortname: Jacks
+ hotartical: true
+ recent_visitors: true
 # Disqus
 #disqus_shortname:
 

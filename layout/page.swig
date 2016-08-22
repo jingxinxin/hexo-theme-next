@@ -39,10 +39,13 @@
       {% if theme.study.enable %}
         {% include 'extensions/study/study.swig' %}
       {% else %}
-        <div style="text-align: center;color: #dddddd">��Ϣ����������Ҫ�������ļ�������study: enable:true</div>
+        <div style="text-align: center;color: #dddddd">信息：可能你需要在配置文件中设置study: enable:true</div>
       {% endif %}
     {% else %}
       {{ page.content }}
+      {% if page.type === 'about' %}
+        {% include '_macro/duoshuo-recent-visitors .swig' %}
+      {% endif %}
     {% endif %}
   </div>
 
