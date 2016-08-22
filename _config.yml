@@ -58,30 +58,42 @@ menu_icons:
 # extensions feature Settings
 # ---------------------------------------------------------------
 
-# study ¶ÁÊéÒ³Ãæ
+# study è¯»ä¹¦é¡µé¢
 study:
  enable: true
  readed:
-  ÎÒµÄµÚÒ»±¾Âş»­³´¹ÉÊé:
+  å¤©æ–¹å¤œè°­:
+    url: https://img3.doubanio.com/lpic/s1225405.jpg
+  æ ¼æ—ç«¥è¯:
+    url: https://img3.doubanio.com/lpic/s5978800.jpg
+  äººæ€§çš„å¼±ç‚¹:
+    url: https://img1.doubanio.com/lpic/s9076647.jpg
+  æˆ‘çš„ç¬¬ä¸€æœ¬æ¼«ç”»ç‚’è‚¡ä¹¦:
     url: https://img3.doubanio.com/lpic/s26717372.jpg
     a:
-  ASP.NET 4.0 ¶¯Ì¬ÍøÕ¾¿ª·¢ÊµÓÃ½Ì³Ì:
+  ASP.NET 4.0 åŠ¨æ€ç½‘ç«™å¼€å‘å®ç”¨æ•™ç¨‹:
     url: https://img3.doubanio.com/lpic/s9078940.jpg
-  HTML5+CSS3¾«ÖÂ·¶Àı´Çµä:
+  é«˜æ•ˆèƒ½äººå£«çš„ä¸ƒä¸ªä¹ æƒ¯:
+    url: https://img1.doubanio.com/lpic/s1264159.jpg
+  HTML5+CSS3ç²¾è‡´èŒƒä¾‹è¾å…¸:
     url: https://img1.doubanio.com/lpic/s24559317.jpg
-  ·¬ÇÑ¹¤×÷·¨Í¼½â:
+  æ€ç»´å¯¼å›¾:
+    url: https://img3.doubanio.com/lpic/s3757524.jpg
+  ç•ªèŒ„å·¥ä½œæ³•å›¾è§£:
     url: https://img3.doubanio.com/lpic/s4599081.jpg
  reading:
-  nodejsÉîÈëÇ³³ö:
+  nodejsæ·±å…¥æµ…å‡º:
        url: https://img3.doubanio.com/lpic/s27269296.jpg
        a: ~
   JavaScript:
     url: https://img3.doubanio.com/lpic/s8958650.jpg
-  ´ÓÄãµÄÈ«ÊÀ½çÂ·¹ı:
+  ä»ä½ çš„å…¨ä¸–ç•Œè·¯è¿‡:
     url: https://img3.doubanio.com/lpic/s27102925.jpg
  want:
-  ËÄ²½´´Òµ·¨:
+  å››æ­¥åˆ›ä¸šæ³•:
     url: https://img3.doubanio.com/lpic/s11171520.jpg
+  ä¸çˆ±å› æ–¯å¦æœˆçƒæ¼«æ­¥:
+    url: https://img3.doubanio.com/lpic/s7062135.jpg
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -235,7 +247,7 @@ duoshuo_info:
   ua_enable: true
   admin_enable: true
   user_id: 6265421695675270000
-  admin_nickname: µØÖ÷¨r(¨s¨Œ¨t)¨q
+  admin_nickname: åœ°ä¸»â•®(â•¯â–½â•°)â•­
 
 
 # Facebook SDK Support.
@@ -292,10 +304,10 @@ extensions: extensions
 # Theme version
 version: 0.5.1
 # title
-links_title: ÓÑÇéÁ´½Ó
+links_title: å‹æƒ…é“¾æ¥
 links:
-  ²©Ö÷: http://51201314.me/
-  ÔİÈ±: http://
+  åšä¸»: http://51201314.me/
+  æš‚ç¼º: http://
 
 # add Fork me on Github
 fork_github:
@@ -306,7 +318,7 @@ fork_github:
 #author: Jacks
 #alipay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg
 #wechatpay: http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg
-#reward_comment: ²âÊÔ´òÉÍ
+#reward_comment: æµ‹è¯•æ‰“èµ
 
 #busuanzi-counter
 #busuanzi_count:
