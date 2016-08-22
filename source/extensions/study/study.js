@@ -8,20 +8,21 @@ $(function () {
   function hengshuping() {
     if (window.orientation == 180 || window.orientation == 0) {
       // alert("竖屏状态！")
-      card.height(card.width() * 1.414);
     }
     if (window.orientation == 90 || window.orientation == -90) {
       // alert("横屏状态！")
-      card.height(card.width() * 1.414);
     }
+    var visible_width = $('.tab-content').children(':visible').children().width();
+    card.height(visible_width * 1.414);
+
   }
 
   window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
   //endregion
 
-
   $(window).load(function () {
-    card.height(card.width() * 1.414);
+    var visible_width = $('.tab-content').children(':visible').children().width();
+    card.height(visible_width * 1.414);
   });
 
   $('.tab-block').on('click', function (e) {
