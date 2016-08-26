@@ -44,7 +44,7 @@
     {% else %}
       {{ page.content }}
       {% if page.type === 'about' %}
-        {% include '_macro/duoshuo-recent-visitors .swig' %}
+        {% include '_macro/duoshuo-recent-visitors.swig' %}
       {% endif %}
     {% endif %}
   </div>
