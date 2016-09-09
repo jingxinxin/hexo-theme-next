@@ -1,4 +1,3 @@
-<div class="welcome">欢迎来到我的读书空间！欢迎留言！</div>
 <div class="head">
   <p id="error">阅<span>读</span></p>
   <p id="code">R<span>E</span>A<span>D</span>IN<span>G</span></p>
@@ -26,4 +25,4 @@
     {% endfor %}
   </div>
 </div>
-
+<div class="welcome">欢迎来到我的读书空间！欢迎留言！</div>
