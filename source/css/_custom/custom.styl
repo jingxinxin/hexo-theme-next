@@ -1,16 +1,14 @@
 // Custom styles.
 
 // 打赏按钮开始
-.donate_bar {
+.donate_bar
   text-align: center;
   margin-top: 5%;
-}
 
-.donate_bar.hidden {
+.donate_bar.hidden
   display: none;
-}
 
-.donate_bar a.btn_donate {
+.donate_bar a.btn_donate
   display: inline-block;
   width: 82px;
   height: 82px;
@@ -25,25 +23,24 @@
   -o-transition: background 0s;
   -ms-transition: background 0s;
   transition: background 0s;
-}
 
-.donate_bar a.btn_donate:hover {
+.donate_bar a.btn_donate:hover
   background-position: 0px -82px;
-}
 
-.donate_bar .donate_txt {
+.donate_bar .donate_txt
   display: block;
   color: #9d9d9d;
   font: 14px / 2 "Microsoft Yahei";
-}
 
 //热门评论样式
-.ds-top-threads, .content + p { //慎用p标签
-  margin: 0 0 0 20px; //修正手机，置顶最右边的bug
-}
+.ds-top-threads, .content + p //慎用p标签
+  margin: 0 0 0 20px;
 
-/*region --- add Fork me on Github ------------*/
-#forkongithub a {
+//修正手机，置顶最右边的bug
+
+/*region --- add Fork me on Github ---*/
+
+#forkongithub a
   /*background:#b655;*/
   color: cornflowerblue;
   text-decoration: none;
@@ -52,28 +49,23 @@
   font-size: 0.5rem;
   position: relative;
   transition: 0.5s;
-}
+  &:hover
+    background: #522266;
+    color: #fff;
+  &::before, &::after
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 1px;
+    background: #fff;
+  &::after
+    bottom: 1px;
+    top: auto;
 
-#forkongithub a:hover {
-  background: #522266;
-  color: #fff;
-}
-
-#forkongithub a::before, #forkongithub a::after {
-  content: "";
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 1px;
-  left: 0;
-  height: 1px;
-  background: #fff;
-}
-
-#forkongithub a::after {
-  bottom: 1px;
-  top: auto;
-}
+/*endregion*/
 
 @media screen and (min-width: 1px) {
   #forkongithub {
@@ -85,20 +77,17 @@
     overflow: hidden;
     height: 130px;
     z-index: 9;
-  }
-
-  #forkongithub a {
-    width: 120px;
-    position: absolute;
-    top: 28px;
-    left: -50px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    a {
+      width: 120px;
+      position: absolute;
+      top: 28px;
+      left: -50px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    }
   }
 }
-
-/*endregion*/
