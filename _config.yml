@@ -301,7 +301,7 @@ use_motion: true
 fancybox: true
 
 # Static files
-vendors: vendors
+vendors: lib
 css: css
 js: js
 images: images
@@ -315,7 +315,7 @@ links:
   阮一峰: http://www.ruanyifeng.com/blog/
   暂缺: http://
 
-# add Fork me on Github
+# add Fork me on Githubg
 fork_github:
   enable: true
   url: https://github.com/jingxinxin
